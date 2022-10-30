@@ -1,7 +1,9 @@
 let num = document.getElementById('form-c');
+document.querySelector("#output").style.visibility='hidden';
 
 num.addEventListener('input',(e)=>{
     e.preventDefault();
+    document.querySelector("#output").style.visibility='visible';
     console.log('hi');
     let gram = e.target.value;
     let ounc = 0.035 * gram;
